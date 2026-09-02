@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MedSim 2.0 — Hospital Simulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="brand-mark">✚</div><div><strong>MedSim <em>2.0</em></strong><span>Hospital Simulator</span></div></div>
+  <div class="top-actions"><span class="case-pill">CASE <b id="caseNo">001</b></span><button class="ghost" id="randomTop">🎲 Random Case</button></div>
+</header>
+<main>
+<section class="hero">
+ <div><p class="eyebrow">EDUCATIONAL CLINICAL SIMULATION</p><h1>Build cases. <span>Think clinically.</span></h1><p class="hero-copy">Buat kasus pasienmu sendiri, simpan di Case Library, lalu uji kemampuan clinical reasoning dengan simulator interaktif.</p></div>
+ <div class="stats"><div><b id="caseCount">0</b><span>Cases</span></div><div><b id="completedCount">0</b><span>Completed</span></div></div>
+</section>
+
+<nav class="main-nav">
+ <button class="nav-btn active" data-page="simulator">🩺 Simulator</button>
+ <button class="nav-btn" data-page="builder">➕ Case Builder</button>
+ <button class="nav-btn" data-page="library">📚 Case Library</button>
+</nav>
+
+<section id="appContent"></section>
+</main>
+<footer>MedSim 2.0 • Simulasi edukasi kesehatan • Bukan alat diagnosis medis.</footer>
+</div>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
